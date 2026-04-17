@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import { v4 as uuidv4 } from "uuid";
 
 const locationSchema = new mongoose.Schema(
   {
@@ -7,7 +8,7 @@ const locationSchema = new mongoose.Schema(
       required: true,
       unique: true,
       index: true,
-      default: uuidv4()
+      default: uuidv4
     },
 
     name: {
