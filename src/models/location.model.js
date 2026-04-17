@@ -7,7 +7,7 @@ const locationSchema = new mongoose.Schema(
       required: true,
       unique: true,
       index: true,
-      default: uuidv4
+      default: uuidv4()
     },
 
     name: {
